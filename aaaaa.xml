@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" >
+  <test name="ChromBrowser">
+	  <parameter name="OpenBrowser" value="chrome"></parameter>
+    <classes>
+      <class name="Practice1.SwagLabTestClass"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FirefoxBrowser">
+	   <parameter name="OpenBrowser" value="firefox"></parameter>
+    <classes>
+      <class name="Practice1.SwagLabTestClass"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->

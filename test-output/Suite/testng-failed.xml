@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FirefoxBrowser(failed)">
+    <parameter name="OpenBrowser" value="firefox"/>
+    <classes>
+      <class name="Practice1.SwagLabTestClass">
+        <methods>
+          <include name="AddTocart"/>
+          <include name="verifyTitle"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+          <include name="SwagLabLogin"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- Practice1.SwagLabTestClass -->
+    </classes>
+  </test> <!-- FirefoxBrowser(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromBrowser(failed)">
+    <parameter name="OpenBrowser" value="chrome"/>
+    <classes>
+      <class name="Practice1.SwagLabTestClass">
+        <methods>
+          <include name="AddTocart"/>
+          <include name="verifyTitle"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+          <include name="SwagLabLogin"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- Practice1.SwagLabTestClass -->
+    </classes>
+  </test> <!-- ChromBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
